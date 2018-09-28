@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MySql.Data, Version=8.0.12.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -48,19 +48,27 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="helpers\ini_func.cs" />
-    <Compile Include="prof\choose_pr.cs" />
-    <Compile Include="prof\choose_pr.Designer.cs">
-      <DependentUpon>choose_pr.cs</DependentUpon>
+    <Compile Include="prof\ChoosePr.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="prof\Add_ad.cs" />
+    <Compile Include="prof\ChoosePr.Designer.cs">
+      <DependentUpon>ChoosePr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="prof\Add_ad.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="prof\Add_ad.Designer.cs">
       <DependentUpon>Add_ad.cs</DependentUpon>
     </Compile>
-    <Compile Include="prof\Add_mu.cs" />
+    <Compile Include="prof\Add_mu.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="prof\Add_mu.Designer.cs">
       <DependentUpon>Add_mu.cs</DependentUpon>
     </Compile>
-    <Compile Include="prof\Ads.cs" />
+    <Compile Include="prof\Ads.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="prof\Ads.Designer.cs">
       <DependentUpon>Ads.cs</DependentUpon>
     </Compile>
@@ -97,11 +105,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="stud\StudAds.cs" />
+    <Compile Include="stud\StudChPr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stud\StudChPr.Designer.cs">
+      <DependentUpon>StudChPr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stud\StudAds.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="stud\StudAds.Designer.cs">
       <DependentUpon>StudAds.cs</DependentUpon>
     </Compile>
-    <Compile Include="stud\StudMu.cs" />
+    <Compile Include="stud\StudMu.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="stud\StudMu.Designer.cs">
       <DependentUpon>StudMu.cs</DependentUpon>
     </Compile>
@@ -110,12 +128,6 @@
     </Compile>
     <Compile Include="stud\StudForm.Designer.cs">
       <DependentUpon>StudForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="stud\StudPrDisc.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="stud\StudPrDisc.Designer.cs">
-      <DependentUpon>StudPrDisc.cs</DependentUpon>
     </Compile>
     <Compile Include="stud\StudProgress.cs">
       <SubType>Form</SubType>
@@ -138,8 +150,8 @@
     <EmbeddedResource Include="prof\Ads.resx">
       <DependentUpon>Ads.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="prof\choose_pr.resx">
-      <DependentUpon>choose_pr.cs</DependentUpon>
+    <EmbeddedResource Include="prof\ChoosePr.resx">
+      <DependentUpon>ChoosePr.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="prof\Prepsched.resx">
       <DependentUpon>Prepsched.cs</DependentUpon>
@@ -165,6 +177,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="stud\StudAds.resx">
+      <DependentUpon>StudAds.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="stud\StudForm.resx">
       <DependentUpon>StudForm.cs</DependentUpon>
     </EmbeddedResource>

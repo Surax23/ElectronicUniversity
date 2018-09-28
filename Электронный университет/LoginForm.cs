@@ -45,8 +45,8 @@ namespace Электронный_университет
 
         private void LoginForm_Load(object sender, EventArgs e)
         {
-            txt = ini.ReadIni(); // Вызываем ReadIni (чтение файла servers.ini)
-            for (int i = 0; i <= txt.Length - 1; i++) // Обновляем комбобокс новыми значениями.
+            txt = ini.ReadIni();
+            for (int i = 0; i <= txt.Length - 1; i++)
             {
                 comboBox1.Items.Add(txt[i][0]);
             }
