@@ -18,12 +18,6 @@ namespace Электронный_университет.stud
             InitializeComponent();
             this.MaximizeBox = false;
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
-            this.groups_name = groups_name;
-            this.course_id = course_id;
-            this.ip = ip;
-            this.db = db;
-            this.user = user;
-            this.pass = pass;
             NewMethod();
             this.listBox1.MouseDoubleClick += listBox1_MouseDoubleClick;
         }

@@ -40,7 +40,6 @@ namespace Электронный_университет
                 string crs_name = "";
                 string prf_name = "";
                 string classes_type_name = "";
-                int number = 0;
 
                 DB_connect con = new DB_connect(ip, db, user, pass);
                 MySqlDataReader reader2 = con.GetDBData("select * from course where id='" + course_id + "';");

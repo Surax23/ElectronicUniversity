@@ -23,7 +23,7 @@ namespace Электронный_университет
             }
             catch (Exception ex) // Ловим ошибку
             {
-                //Console.WriteLine(ex);
+                Console.WriteLine(ex.Message);
             }
         }
         MySqlConnection myConnection = null;

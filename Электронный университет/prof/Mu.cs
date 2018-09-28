@@ -89,7 +89,7 @@ namespace Электронный_университет
 
         private void button3_Click_1(object sender, EventArgs e)
         {
-            Add_mu mu = new Add_mu(0, prof_id, ip, db, user, pass);
+            Add_mu mu = new Add_mu(0, "", prof_id, ip, db, user, pass);
             mu.ShowDialog();
         }
 

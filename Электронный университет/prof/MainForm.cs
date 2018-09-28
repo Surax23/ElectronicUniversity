@@ -103,7 +103,7 @@ namespace Электронный_университет
 
         private void label5_Click(object sender, EventArgs e)
         {
-            Ads ads = new Ads();
+            Ads ads = new Ads(prof_id, ip, db, user, pass);
             if (ini.FormOpened(ads))
             {
                 Application.OpenForms[ads.Name].Focus();
@@ -132,7 +132,7 @@ namespace Электронный_университет
 
         private void label4_Click(object sender, EventArgs e)
         {
-            choose_pr pr = new choose_pr(ip, db, user, pass);
+            choose_pr pr = new choose_pr(prof_id, ip, db, user, pass);
             if (ini.FormOpened(pr))
             {
                 Application.OpenForms[pr.Name].Focus();
